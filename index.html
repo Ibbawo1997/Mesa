@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr Harun Intergrated Service Limited</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+
+      /* NEW PROFESSIONAL BACKGROUND */
+      background: linear-gradient(to bottom right, #f0f4f8, #e8eef5, #d6e0eb);
+
+      color: #333;
+    }
+
+    .header {
+      background: #ffffff;
+      padding: 20px 5%;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .small-logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #d84315;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    }
+
+    .small-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .header-title {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header-title h1 {
+      margin: 0;
+      font-size: 26px;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #d84315;
+    }
+
+    .address-bar {
+      text-align: center;
+      margin-top: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      width: 100%;
+    }
+
+    .address-item {
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .divider {
+      width: 1.5px;
+      height: 80px;
+      background: linear-gradient(to bottom, #d84315, #ffffff, #d84315);
+      background-size: 100% 200%;
+      animation: dividerMove 2.8s infinite alternate;
+      border-radius: 2px;
+    }
+
+    @keyframes dividerMove {
+      0% { background-position: 0 0; }
+      100% { background-position: 0 100%; }
+    }
+
+    .container {
+      max-width: 450px;
+      background: #ffffff;
+      margin: 50px auto;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #d84315;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      font-size: 32px;
+      font-weight: bold;
+      margin: 0 auto 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .welcome {
+      text-align: center;
+      margin-bottom: 25px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(10px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    label {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background: #d84315;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background: #bf360c;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 25px;
+      font-size: 12px;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      .address-bar {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .divider {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="small-logo">
+      <div class="logo">HM</div>
+    </div>
+
+    <div class="header-title">
+      <h1>Mr Harun Intergrated Service Limited</h1>
+    </div>
+  </div>
+
+  <!-- ADDRESS BAR -->
+  <div class="address-bar">
+    <div class="address-item">15 Wobo Street,<br>Area One, Misau LGA., Bauchi State-Nigeria.</div>
+    <div class="divider"></div>
+    <div class="address-item">Contact: +234 869727421<br>Email: adamuib21g@gmail.com</div>
+    <div class="divider"></div>
+    <div class="address-item">World Leader in Financial Trading</div>
+  </div>
+
+  <!-- LOGIN BOX -->
+  <div class="container">
+    <div class="logo">HM</div>
+
+    <div class="welcome">
+      <h2>Welcome Back!</h2>
+      <p>Please sign in to continue</p>
+    </div>
+
+    <label for="username">Username</label>
+    <input type="text" id="username" placeholder="Enter your username">
+
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="Enter your password">
+
+    <button>Sign In</button>
+
+    <div class="copyright">© 2025 Mr Haruna Intergrated Service. All Rights Reserved.</div>
+  </div>
+
+</body>
+</html>
